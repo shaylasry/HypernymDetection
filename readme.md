@@ -1,4 +1,4 @@
-## Hypernym Detection:
+# Hypernym Detection:
 
 This application is a re-designing algorithm for the following experiment:
 [Original Experiment](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")
@@ -8,7 +8,7 @@ We used map-reduce (AWS EMR) pattern and experimentend the algorithm quality on 
 ------------
 
 
-### Changes:
+## Changes:
 - Parsing the text : Instead of parsing the corpus with MINIPAR,
 we used Google Syntactic N-Grams as an input:
 [Google Syntactic N-Grams](http://storage.googleapis.com/books/syntactic-ngrams/index.html "Google Syntactic N-Grams")
@@ -35,7 +35,7 @@ There is no implementation for the usage of coordinate terms (Section 6).
 ------------
 
 
-### Implementation related information:
+## Implementation related information:
 Stemmer:
 
 The words in the Google Syntactic N-Grams dataset are not stemmed. 
@@ -57,7 +57,7 @@ considered as a feature (as described at the first paragraph of section 4).
 ------------
 
 
-### Run instructions:
+## Run instructions:
 ##### vectorbuilder: 
 1.     Connect to your AWS user.
 2.	Create new bucket and upload to it the hypernym.txt and biarcs files.
@@ -167,7 +167,7 @@ Takes the output file from the last step, which contains all the pairs and the m
 
 
 
-#### === Evaluation Results ===
+## === Evaluation Results ===
 ##### ResultsResults
 Correctly Classified Instances        8725               75.929  %  
 Incorrectly Classified Instances      2766               24.071  %  
