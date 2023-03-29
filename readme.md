@@ -23,9 +23,10 @@ Instead of acquiring an annotated set from WordNet or manually annotate randomly
 We used provided hypernym.txt file - composed of word pairs and their annotations
 (True - the second word is a hypernym of the first word, False - the
 second word is not a hypernym of the first word).
-
- ** The application works with every file with the same structure as hypernym.txt.
+** The application works with every file with the same structure as hypernym.txt.
 **
+
+
 
 - There is no implementation for evaluation of the extracted features, as described at section 4.
 - There is no implementation for the simple classifiers, described at the second part of the second paragraph of section 5.
@@ -82,8 +83,8 @@ to:
 For each line in the input file find all the nouns and create for each pair depenecy paths.
 
 Mapper:
-`Key: Map1to2Key <dp, index> , we write new lines twice (with indexes 0 and 1)
-`
+
+    Key: Map1to2Key <dp, index> , we write new lines twice (with indexes 0 and 1)
 We use sort the key by dp and then by index.
 We iterate the index 0 keys to get the unique counter for the same dp.
 We iterate the index 1 to use context.write for each dp with dpMin >= unique counter.
@@ -135,17 +136,16 @@ Takes an exmpale file (current file : hypernym.txt) and keep only the nouns that
 
 Mapper:
 
-` Key: Nouns.`
-`Value :   NounsVector <ArrayList<LongWritable> counts, isHypernym>.`
+    Key: Nouns.
+    Value :   NounsVector <ArrayList<LongWritable> counts, isHypernym>.
 Nouns vectoer represent the characaristics vector and the boolan value from the example file (current file : hypernym.txt)
 
 number of key-values pairs: number of different nouns pairs
 
 Reducer:
 
-` Key: Nouns
-`
-`Value : NounsVector`
+    Key: Nouns
+    Value : NounsVector
 
 output: Nouns, NounsVectora
 
