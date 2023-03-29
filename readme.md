@@ -1,6 +1,6 @@
 # Hypernym Detection:
 
-This application is a redesigning algorithm for the following experiment: 
+This application is a redesigning algorithm for the following experiment:  
 [Learning syntactic patterns for automatic
 hypernym discovery
 ](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")  
