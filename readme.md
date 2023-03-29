@@ -72,7 +72,7 @@ to:
 1. download the parts file form the last step and put it in the same directory as the pom in the experiment folder.
 2. Run the main and it will take care of the rest
 
-### Application:
+## Application:
 
 
 ##### Map-Reduce: 
