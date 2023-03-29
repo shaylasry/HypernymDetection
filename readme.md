@@ -1,11 +1,15 @@
 # Hypernym Detection:
 
-This application is a re-designing algorithm for the following experiment:
+This application is a re-designing algorithm for the following experiment:  
 [Learning syntactic patterns for automatic
 hypernym discovery
-](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")
+](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")  
+The experiment purpose was to determining whether two nouns in a news article participate in a hypernym
+relationship
 
-We used map-reduce (AWS EMR) pattern and experimentend the algorithm quality on a large-scale input.
+While a re-designing the algorithm we made some changes with input data, comprasion method and the way we define a dependency path.  
+To implament the alogorithm we used map-reduce (AWS EMR) pattern and experimentend the algorithm quality on a large-scale input.  
+Details on the changes and implementation will be detailed later
 
 ------------
 
