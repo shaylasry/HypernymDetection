@@ -23,8 +23,7 @@ Instead of acquiring an annotated set from WordNet or manually annotate randomly
 We used provided hypernym.txt file - composed of word pairs and their annotations
 (True - the second word is a hypernym of the first word, False - the
 second word is not a hypernym of the first word).  
-**The application works with every file with the same structure as hypernym.txt.
-**  
+**The application works with every file with the same structure as hypernym.txt.**  
 
 
 
