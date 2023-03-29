@@ -9,6 +9,7 @@ The experiment aimed to determine whether two nouns in a news article participat
 
 During the redesigning of the algorithm, we made changes to the input data, comparison method, and the way we define a dependency path. To implement the algorithm, we used the map-reduce (AWS EMR) pattern and tested the quality of the algorithm on a large-scale input.  
 Details about the changes and implementation will be provided later.
+
 ------------
 
 
