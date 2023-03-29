@@ -65,11 +65,11 @@ considered as a feature (as described at the first paragraph of section 4).
 ## Run instructions:
 ##### vectorbuilder: 
 1.     Connect to your AWS user.
-2.	Create new bucket and upload to it the hypernym.txt and biarcs files.
-3. Go to vectorbuilder main.java file and change all the lines that reffer to s3 bucket location from:  
-`"s3://ofiwjoiwf/map2output/" `  
-to:  
-`"s3://%YOUR BUCKET NAME%/map2output/"`
+2.     Create new bucket and upload to it the hypernym.txt and biarcs files.
+3.     Go to vectorbuilder main.java file and change all the lines that reffer to s3 bucket location from:  
+     `"s3://ofiwjoiwf/map2output/" `  
+     to:  
+     `"s3://%YOUR BUCKET NAME%/map2output/"`
 4.     Package the code and upload to all parts jar files to bucket
 5.     Run main and use the output in weka
     
@@ -187,17 +187,17 @@ Total Number of Instances            11491
 **Recall: 1.0**
 **F1 Score: 0.863177681044717**
 
-TRUE POSITIVE:
-TRUE NEGATIVE:
-"translat"/"edit"
-"part"/"discours"
-"messag"/"book"
-"stori"/"hatr"
-"part"/"voic"
-FALSE NEGATIVE:
-"writ"/"summon"
-"posit"/"order"
-"polici"/"contain"
-"territori"/"arkansa"
-"habit"/"resid"
-FALSE POSITIVE:
+TRUE POSITIVE:  
+TRUE NEGATIVE:  
+"translat"/"edit"  
+"part"/"discours"  
+"messag"/"book"  
+"stori"/"hatr"  
+"part"/"voic"  
+FALSE NEGATIVE:  
+"writ"/"summon"  
+"posit"/"order"  
+"polici"/"contain"  
+"territori"/"arkansa"  
+"habit"/"resid"  
+FALSE POSITIVE:  
