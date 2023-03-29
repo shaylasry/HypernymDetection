@@ -23,8 +23,7 @@ Instead of acquiring an annotated set from WordNet or manually annotate randomly
 We used provided hypernym.txt file - composed of word pairs and their annotations
 (True - the second word is a hypernym of the first word, False - the
 second word is not a hypernym of the first word).
-** The application works with every file with the same structure as hypernym.txt.
-**
+
 
 
 
@@ -171,14 +170,14 @@ Takes the output file from the last step, which contains all the pairs and the m
 
 #### === Evaluation Results ===
 ##### ResultsResults
-Correctly Classified Instances        8725               75.929  %
-Incorrectly Classified Instances      2766               24.071  %
-Kappa statistic                          0     
-Mean absolute error                      0.3643
-Root mean squared error                  0.4271
-Relative absolute error                 99.6507 %
-Root relative squared error             99.8992 %
-Total Number of Instances            11491     
+Correctly Classified Instances        8725               75.929  %  
+Incorrectly Classified Instances      2766               24.071  %  
+Kappa statistic                          0  
+Mean absolute error                      0.3643  
+Root mean squared error                  0.4271  
+Relative absolute error                 99.6507 %  
+Root relative squared error             99.8992 %  
+Total Number of Instances            11491  
 
 **Precision: 0.7592898790357672**
 **Recall: 1.0**
