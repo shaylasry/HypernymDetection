@@ -1,7 +1,9 @@
 # Hypernym Detection:
 
 This application is a re-designing algorithm for the following experiment:
-[Original Experiment](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")
+[Learning syntactic patterns for automatic
+hypernym discovery
+](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")
 
 We used map-reduce (AWS EMR) pattern and experimentend the algorithm quality on a large-scale input.
 
