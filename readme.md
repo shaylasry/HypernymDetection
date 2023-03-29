@@ -1,9 +1,12 @@
-##Hypernym Detection:
+## Hypernym Detection:
 
 This application is a re-designing algorithm for the following experiment:
 [Original Experiment](http://ai.stanford.edu/~rion/papers/hypernym_nips05.pdf "Original Experiment")
 
 We used map-reduce (AWS EMR) pattern and experimentend the algorithm quality on a large-scale input.
+
+------------
+
 
 ### Changes:
 - Parsing the text : Instead of parsing the corpus with MINIPAR,
@@ -29,6 +32,9 @@ There is no implementation for the simple classifiers, described at the second p
 There is no implementation for the usage of coordinate terms (Section 6).
 
 
+------------
+
+
 ### Implementation related information:
 Stemmer:
 
@@ -46,6 +52,9 @@ You can read more about The Syntactic Ngrams Corpus dataset in the following lin
 DPMin - The minimal number of unique noun pairs for each dependency
 path. Dependency path with less distinct noun-pairs should not be
 considered as a feature (as described at the first paragraph of section 4).
+
+
+------------
 
 
 ### Run instructions:
@@ -95,6 +104,9 @@ output: Text, NounsData
 number of key-values pairs: for each key that unique counter >= dpmin we get the amount of the different pairs that related to it.
 
 
+------------
+
+
 
 ###### Second map-reduce:
 Creates the vector for each pair of nouns
@@ -113,6 +125,9 @@ Reducer:
 
 output: Nouns, NounsVector
 number of key-values pairs: number of different nouns pairs
+
+------------
+
 
 
 ###### Third map-reduce:
@@ -135,6 +150,9 @@ output: Nouns, NounsVectora
 
 number of key-values pairs: number of different nouns pairs
 
+------------
+
+
 ###### memory usage:
 We only used memory to save the input biarcs file and the hypernym.txt
 also for each vector we used a list of longs to create the charecaristics vector but it is bound to the size of the number of features we use
@@ -144,6 +162,9 @@ We save only 1 vector at a time in the same scope.
 
 ##### weka:
 Takes the output file from the last step, which contains all the pairs and the match feature vector, and run the experiment.
+
+
+------------
 
 
 
